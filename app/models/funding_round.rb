@@ -6,7 +6,7 @@ class FundingRound
 
     def initialize(type, investment, startup, venture_capitalist)
         if investment < 0
-            type = type
+            @type = type
             @investment = "Please give a proper investment"
             @startup = startup
             @venture_capitalist = venture_capitalist
