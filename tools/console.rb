@@ -11,7 +11,12 @@ etsy = Startup.new("esty", "Jess", "domain2")
 
 vc1 = VentureCapitalist.new("George", 3000000000)
 vc2 = VentureCapitalist.new("Anna", 900000)
-fr1 = FundingRound.new(apple, vc1, "Angel", "3 million")
+vc3 = VentureCapitalist.new("Henry", 500)
+
+fr1 = FundingRound.new(apple, vc1, "Angel", 3000000)
+fr2 = FundingRound.new(apple, vc1, "Angel", 1000000)
+fr3 = FundingRound.new(etsy, vc2, "Angel", 2000000)
+fr4 = FundingRound.new(apple, vc3, "Angel", 350)
 
 binding.pry
 0 #leave this here to ensure binding.pry isn't the last line
